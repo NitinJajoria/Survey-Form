@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(./Image/green-leaf.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	/* background-color: rgba(0, 0, 0, 0.7); */
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 95%;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.header .title {
+	color: green;
+	margin-bottom: 20px;
+}
+
+.header .description {
+	color: black;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+@media screen and (width > 790px) {
+	#survey-form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 20px;
+	}
+    .group {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (width < 790px) {
+	#survey-form {
+		display: flex;
+		flex-direction: column;
+        overflow-y: scroll;
+	}
+    .group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+.form-groups {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+
+.form-group {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.form-control {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+#age {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.input-textarea {
+	padding: 5px;
+	border-radius: 5px;
+	height: auto;
+}
+
+.submit-button {
+	background-color: green;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.input-radio {
+	margin-right: 8px;
+}
